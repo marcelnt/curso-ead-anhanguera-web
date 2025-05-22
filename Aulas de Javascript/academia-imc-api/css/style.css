@@ -1,0 +1,665 @@
+/* Cascading Style Sheets (CSS) */
+
+body,h1,h2,ul,li{
+    /*Zera os espeços do navegador*/
+    margin: 0px;
+    padding: 0px;
+}
+
+a:link, a:active{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* CLASSES DE PADRONIZAÇÃO */
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back_image{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*AREA DO MENU*/
+
+#caixa_menu{
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    position: fixed;
+}
+
+#menu{
+    width:1200px;
+    height: inherit;
+
+}
+.item_menu{
+    width: 200px;
+    height: inherit;
+    text-align: center;
+    font-family: verdana;
+    font-size: 1.2em;
+    color: rgb(243, 109, 7);
+    float: left;
+    box-sizing: border-box;
+    padding-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+}
+
+.item_menu::first-letter{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.item_menu:hover::first-letter{
+    font-weight: bold;
+    font-size: 1.3em;
+    color: rgb(243, 109, 7);
+    
+}
+
+.item_menu:hover{
+    /* background-color: chartreuse; */
+    color: #ec0707;
+    border-bottom: solid 2px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#logo{
+    width: 120px;
+    height: 160px;
+
+    
+    /*Permite sobrepor camadas no CSS*/
+    position: absolute;
+    
+    /*
+        z-index: permite alterar a posição das divs
+        Por exemplo: uma div que está atras poderá ficar na frente de outra div
+    */
+    margin-left: -110px;
+    margin-top: 50px;
+    
+    
+}
+
+
+
+/*AREA DO CABEÇALHO*/
+#header{
+    width: 100%;
+    height: 700px;
+    background-image: url(../imagens/academia1.jpg);
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+
+
+#caixa_header{
+    width: 1200px;
+    height: 400px;
+    
+    box-sizing: border-box;
+    padding-top: 70px;
+
+}
+
+#slogan, #mensagen{
+    width: 600px;
+    height: 550px;
+    background-color: rgba(255,255,255,0.7);
+    margin-left: auto;
+    border-radius: 20px;
+    font-family: verdana;
+    color: #050505;
+    font-size: 25px;
+    line-height: 2;
+    text-align: center;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#mensagen{
+    width: 800px;
+    height: 300px;
+    padding-left: 0px;
+    padding-top: 20px;
+}
+
+/* FORM */
+
+label{
+    display: block;
+    width: 150px;
+    float: left;
+    text-align: right;
+    margin-right: 20px;
+}
+.valor{
+    float: left;
+    margin-bottom: 10px;
+    /* margin-left: 10px; */
+    height: 50px;
+    width: 50%;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+
+.botao, .limpar{
+    width: 150px;
+    height: 50px;
+    background-color:#91f791;
+    border-radius: 20px;
+    color: #000000;
+    font-size: 1em;
+    margin-left: 250px;
+    line-height: 1;
+    margin-bottom: 10px;
+    
+    
+    
+
+}
+
+.limpar{
+    background-color:#f79b91;
+    
+}
+
+.botao:hover, .limpar:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    transition: 1s;
+}
+
+#resultado_imc{
+    width: 100%;
+    background-color: #81f4818f;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+#resultado_imc h2{
+    padding: 0;
+    line-height: 1.2;
+    height: 30px;
+}
+
+#resultado_imc p{
+    height: 15px;
+    text-align: left;
+    font-weight: 600;
+    
+}
+
+#resultado_imc span{
+    font-weight: 100;
+}
+
+/*SEÇÃO A EMPRESA*/
+
+#empresa{
+    width: 100%;
+    height: 600px;
+    background-color: #000000;
+    
+}
+
+#caixa_empresa{
+    width: 1200px;
+    height: inherit;
+}
+
+.titulo{
+    width: inherit;
+    height: 50px;
+
+    box-sizing: border-box;
+    padding-top: 15px;
+    margin-bottom: 100px;
+}
+
+.titulo h1, .titulo span{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 5em;
+    color: rgb(243, 109, 7);
+    letter-spacing: 20px;
+    font-weight: bold;
+
+}
+
+.titulo span{
+    font-size: 2em;
+    color: rgb(91, 91, 90);
+    letter-spacing: 10px;
+}
+
+.conteudo{
+    width: inherit;
+    height: 350px;
+
+
+}
+
+.historico{
+    width: 500px;
+    height: inherit;
+    float: left
+}
+
+
+
+.imagem_historico{
+    width: 80%;
+    height: inherit;
+    background-color:#ffffff;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.imagem_historico img{
+    width: inherit;
+    height: 90%;
+    margin: auto;
+}
+
+.evolucao{
+    width: 700px;
+    height: inherit;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 10px;
+    
+}
+
+.caixa_evolucao{
+    width: 150px;
+    height: 300px;
+   
+    float: left;
+    margin-right: 20px;
+    
+}
+
+.caixa_titulo{
+    width: inherit;
+    height: 50px;
+    background-color: #1e1e21;
+    font-family: verdana;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    border-top-left-radius: 30px;
+}
+
+.caixa_imagem{
+    width: inherit;
+    height: 150px;
+    background-color: #ffffff;
+}
+
+.caixa_imagem img{
+    width: inherit;
+    height: inherit;
+}
+
+
+.caixa_texto{
+    width: inherit;
+    height: 100px;
+    background-color:#141419;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    padding-top: 10px;
+    color: #ffffff;
+    border-bottom-right-radius: 70px;
+}
+
+/*SEÇÃO PRODUTOS*/
+
+#produtos{
+    width: 100%;
+    height: 600px;
+    background-image: url(../imagens/academia3.jpg);
+}
+
+#caixa_produtos{
+    width: 1200px;
+    height: inherit;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+
+
+.item_produto{
+    width: 250px;
+    height: 400px;
+
+    float: left;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.titulo_produto{
+    width: inherit;
+    height: 50px;
+    background-color: rgba(0,0,0,0.8);
+    font-family: verdana;
+    color: rgb(243, 109, 7);
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+
+.imagem_produto{
+    width: inherit;
+    height: 250px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-left: 25px;
+    background-color: rgba(0,0,0,0.2);
+
+}
+
+.imagem_produto img{
+    width: 200px;
+    height: 200px;
+}
+
+.texto_produto{
+    width: 250px;
+    height: 150px;
+    background-color: rgba(255,255,255,0.5);
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    box-sizing: border-box;
+    padding-top: 40px;
+    font-size: 16px;
+    margin-top: 35px;
+    margin-left: -25px;
+    display: none;
+}
+
+.imagem_produto:hover > .texto_produto{
+    display: block;
+}
+
+
+/*SEÇÃO SERVICOS*/
+
+#servicos{
+    width: 100%;
+    height: 500px;
+    background-color: #ffffff;
+}
+
+#caixa_servicos{
+    width: 1200px;
+    height: inherit;
+
+}
+
+.item_servico{
+    width: 500px;
+    height: inherit;
+    float: left;
+    margin-right: 30px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    padding-top: 50px;
+    box-shadow: 5px 5px 30px #cccccc;
+    
+    
+}
+.texto_servico{
+    width: 320px;
+    height: inherit;
+    float: left;
+    margin-left: 30px;
+    line-height: 1.5;
+    text-align: center;
+    font-family: verdana;
+}
+.imagem_servico{
+    width: 150px;
+    height: inherit;
+    float: left;
+}
+
+.imagem_servico img{
+    width: 150px;
+    height: 150px;
+}
+
+/*CONTATOS*/
+
+#contatos{
+    width: 100%;
+    height: 700px;
+    padding-top: 80px;
+    background-color: #000000;
+}
+
+/*FOOTER*/
+
+#footer{
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+    text-align: center;
+    color: #91f791;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 7px;
+}
+
+#caixa_footer{
+    width: 1200px;
+    height: inherit;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.item_servico{
+    width: 500px;
+    height: inherit;
+    float: left;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.seta{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    margin-left: 1300px;
+    display: none;
+    border-radius: 50px;
+
+}
+
+.seta img, .seta a{
+    width: inherit;
+    height: inherit;
+}
+
+
+
+
+/*CEP*/
+#cep{
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /*cetraliza verticalmente*/
+    margin: auto;
+}
+
+#caixa_contato{
+    width: 1200px;
+    height: inherit;
+}
+
+#titulo{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #8cfff0;
+    color: #000000;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    margin-bottom: 30px;
+    letter-spacing: 15px;
+
+}
+#form-cep{
+    /* display: flex; */
+    /* justify-content: baseline; */
+    /* margin: auto; */
+    margin: auto;
+    width: 1200px;
+    height: 400px;
+    background-color: #1f2121;
+    box-shadow: 8px 8px 15px  #8cfff0;
+    padding: 15px;
+    padding-top: 5px;
+}
+
+#form-cep label{
+    display: block;
+    width: 130px;
+    height: 25px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    font-family: verdana;
+    font-size: 1em;
+    margin-right: 10px;
+    color: #8cfff0;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+    /* background-color: khaki; */
+
+}
+
+#form-cep input[type = button], #form-cep input[type = button]:focus{
+    width: 100px;
+    height: 30px;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+    background-color: #0596f7;
+    border-radius: 20px;
+}
+
+#form-cep input[type = button]:hover{
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    
+}
+
+#form-cep input[type = text] {
+    width: 75%;
+    height: 25px;
+    padding-left: 10px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: solid 1px #8cfff0;
+    background-color: #2b2b2a;
+    outline: none;
+}
+
+#form-cep input[name = "txtcep"], 
+#form-cep input[name = "txtnro"],
+#form-cep input[name = "txtuf"]{
+    width: 35%;
+}
+
+#form-cep input[name = "txtcompl"], 
+#form-cep input[name = "txtpais"], 
+#form-cep input[name = "txtbairro"], 
+#form-cep input[name = "txtcidade"]{
+    width: 50%;
+}
+
+
+.item-total-100{
+    /* background-color: lavender; */
+    height: 25px;
+    width: 100%;
+    clear: both;
+}
+
+.item-total-50{
+    width: 80%;
+    /* background-color: lavender; */
+    height: 40px;
+    float: left;
+}
+
+.item-total-30{
+    width: 30%;
+    float: left;
+    /* background-color: lavender; */
+}
+
+.item-total-40{
+    width: 40%;
+    float: left;
+    /* background-color: lavender; */
+}
+
+#form-cep input:focus{
+    background-color: rgb(208, 248, 243);
+    color: #000000;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition:1s;
+
+}
+
+#form-cep input{
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+}
+
+
+
+
