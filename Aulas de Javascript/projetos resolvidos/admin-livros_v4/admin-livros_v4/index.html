@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Live 02</title>
+    <script src="js/crud_livros.js" defer type="module"></script>
+
+</head>
+<body>
+    <header>
+        Sistema de Gerenciamento de Livros 
+    </header>
+
+    <div id="principal">
+        <h1>Cadastro de Livros</h1>
+        <form id="form">
+            <label>Title</label> 
+            <input type="text" name="txt_title" id="title" ><br>
+            <label>SubTitle</label> 
+            <textarea id="subtitle"></textarea><br>
+            <label>Imagem</label> 
+            <input type="text" name="txt_image" id="image" ><br>
+            <label>Price</label> 
+            <input type="text" name="txt_price" id="price" ><br>
+            <div id="salvar">Salvar</div>
+        </form>
+    </div>
+
+    <div id="listLivros">
+        <h1> Listagem de Livros </h1>
+        <div class="linha">
+            <div class="titulo">Title</div>
+            <div class="titulo">Subtitle</div>
+            <div class="titulo">Price</div>
+            <div class="titulo">Opções</div>
+        </div>
+        <div id="listDados">
+            <!--
+                <div id="dados" class="linha dados"> 
+                    <div>Title</div>
+                    <div>Subtitle</div>
+                    <div>Price</div>
+                    <div>
+                        <span>
+                            <img src="icones/editar.png">
+                        </span>  
+                        <span>
+                            <img src="icones/excluir.png">
+                        </span>
+                    </div>
+                </div>
+            -->
+            
+        </div>
+       
+    </div>
+
+    <footer>
+        <span>Desenvolvido por: Marcel Neves Teixeira </script></span>
+    </footer>
+</body>
+</html>

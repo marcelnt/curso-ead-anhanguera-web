@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(#33ae53,#0892c4);
+    margin: 0;
+    padding: 0;
+   
+}
+
+#principal{
+    width: 500px;
+    height: 500px;
+    background-color:#ffffff;
+    margin: auto;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 50px #000000;
+
+}
+
+#principal h1{
+    padding-top: 20px;
+    width: inherit;
+    height: 80px;
+    text-align: center;
+    background-color:#023b4c;
+    color: #ffffff;
+    font-family: Verdana;
+}
+
+form{
+    width: 90%;
+    margin: auto;
+}
+
+
+#principal label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50px;
+    height: 20px;
+    display: block;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+#principal input, textarea{
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    border: solid 1px #c1c1c1;
+    margin-bottom: 10px;
+}
+
+#principal input[name="txt_price"]{
+    width: 30%;
+}
+
+#subtitle {
+    height: 100px;
+    resize: none;
+}
+
+#salvar{
+
+    margin-top: 10px;;
+    padding-top: 10px;
+    display: block;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #00aa06;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#salvar:hover{
+    background-color: #06b6de;
+    color: #080808;
+    cursor: pointer;
+}
+
+#listLivros{
+
+    width: 1200px;
+    height: auto;
+    min-height: 200px;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding-top: 0px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px;
+    box-shadow: 10px 10px 50px #000000;
+}
+
+#listLivros h1{
+    padding-top: 20px;
+    width: 99%;
+    margin: auto;
+    margin-bottom: 10px;;
+    height: 80px;
+    text-align: center;
+    background-color:#023b4c;
+    color: #ffffff;
+    font-family: Verdana;
+}
+
+#listLivros .linha{
+    width: 99%;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.titulo{
+    width: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #020202;
+    color: #06b6de;
+    margin-right: 5px;
+}
+
+
+
+#listDados .linha div{
+    width: 30%;
+    margin-right: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.dados div{
+    width: 50px;
+    background-color: rgb(167, 200, 189);
+    box-sizing: border-box;
+    margin-right: 5px;
+    padding: 10px;
+    
+}
+.dados img{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+   
+}
+
+.dados img:hover{
+    cursor: pointer;
+}
+header, footer{
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+    
+}
+
+header{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: #07c3f7;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+footer{
+    box-sizing: border-box;
+    padding: 20px;
+    height: 80px;
+}
+
+footer span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #07c3f7;
+    display: block;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+
+

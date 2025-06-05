@@ -1,0 +1,396 @@
+/* Cascading Style Sheets (CSS) */
+
+body,h1,h2,ul,li{
+    /*Zera os espeços do navegador*/
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+a:link, a:active{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* CLASSES DE PADRONIZAÇÃO */
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back_image{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*AREA DO MENU*/
+
+#caixa_menu{
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    position: fixed;
+}
+
+#menu{
+    width:1200px;
+    height: inherit;
+
+}
+.item_menu{
+    width: 200px;
+    height: inherit;
+    text-align: center;
+    font-family: cursive;
+    font-size: 26px;
+    color: rgb(255, 183, 0);
+    float: left;
+    box-sizing: border-box;
+    padding-top: 20px;
+    
+}
+.item_menu:hover{
+    /* background-color: chartreuse; */
+    color: #ec8507;
+    border-bottom: solid 2px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#logo{
+    width: 120px;
+    height: 160px;
+
+    
+    /*Permite sobrepor camadas no CSS*/
+    position: absolute;
+    
+    /*
+        z-index: permite alterar a posição das divs
+        Por exemplo: uma div que está atras poderá ficar na frente de outra div
+    */
+    margin-left: -110px;
+    margin-top: 50px;
+    
+    
+}
+
+
+
+a:link, a:visited{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/*AREA DO CABEÇALHO*/
+#header{
+    width: 100%;
+    height: 700px;
+    background-image: url(../imagens/Livraria-Vila-JK_083-FG.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+
+
+#caixa_header{
+    width: 1200px;
+    height: 400px;
+    
+    box-sizing: border-box;
+    padding-top: 70px;
+
+}
+
+#slogan, #mensagen{
+    width: 600px;
+    height: 550px;
+    background-color: rgba(255,255,255,0.7);
+    margin-left: auto;
+    
+    font-family: verdana;
+    color: #050505;
+    font-size: 25px;
+    line-height: 2;
+    text-align: center;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#mensagen{
+    width: 800px;
+    height: 300px;
+    padding-left: 0px;
+    padding-top: 20px;
+}
+
+/* FORM */
+
+.valor{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    height: 50px;
+    width: 50%;
+    font-size: 1em;
+    margin-bottom: 50px;
+}
+
+
+.botao{
+    width: 150px;
+    height: 50px;
+    background-color:#f7e491;
+    border-radius: 20px;
+    color: #000000;
+    font-size: 1em;
+    margin-left: 250px;
+    line-height: 1;
+
+}
+
+.botao:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+#resultado_imc{
+    width: 100%;
+    background-color: #f4b1818f;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+#resultado_imc h2{
+    padding: 0;
+    line-height: 1.2;
+    height: 30px;
+}
+
+#resultado_imc p{
+    height: 15px;
+    text-align: left;
+}
+
+/* SEÇÃO PRODUTOS */
+
+#empresa{
+    width: 100%;
+    min-height: 600px;
+    height: auto;
+    overflow: hidden;
+    background-image: radial-gradient(#a19b9b 20%, #ffa63a 100%);
+    
+    
+}
+
+#caixa_empresa{
+    width: 1200px;
+    height: inherit;
+    padding-bottom: 50px;
+
+    
+}
+
+.titulo{
+    width: inherit;
+    height: 50px;
+
+    box-sizing: border-box;
+    padding-top: 15px;
+    margin-bottom: 100px;
+}
+
+.titulo h1, .titulo span{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 5em;
+    color: rgb(255, 119, 0);
+    letter-spacing: 20px;
+    font-weight: bold;
+
+}
+
+.titulo span{
+    font-size: 2em;
+    color: rgb(4, 4, 4);
+    letter-spacing: 10px;
+}
+
+.conteudo{
+    width: inherit;
+    min-height: 350px;
+    height: auto;
+    overflow: hidden;
+
+
+}
+
+.historico{
+    width: inherit;
+    height: inherit;
+    height: auto;
+    overflow: hidden;
+}
+
+
+
+
+.produtos{
+    width: inherit;
+    min-height: 200px;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+
+
+    
+}
+
+.caixa_produto{
+    width: 250px;
+    height: 400px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 10px #cccccc;
+    
+
+    
+}
+
+.caixa_produto:hover{
+    transform: scale(1.1);
+    transition: 1s;
+
+}
+
+.caixa_titulo{
+    width: inherit;
+    min-height: 50px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #ff7104;
+    font-family: verdana;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.7em;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.caixa_imagem{
+    width: 70%;
+    height: 150px;
+    background-color: #ffffff;
+    margin: auto;
+}
+
+.caixa_imagem img{
+    width: inherit;
+    height: inherit;
+    margin: auto;
+    display: block;
+}
+
+
+.caixa_texto{
+    width: inherit;
+    height: 200px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #000000;
+
+}
+
+
+/*FOOTER*/
+
+#footer{
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+    text-align: center;
+    color: #f7cd91;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 7px;
+}
+
+#caixa_footer{
+    width: 1200px;
+    height: inherit;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.item_servico{
+    width: 500px;
+    height: inherit;
+    float: left;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.seta{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    position: fixed;
+    margin-left: 1300px;
+    display: none;
+}
+
+
+
+/*
+.caixa3{
+    width: 200px;
+    height: 120px;
+    background-color: yellow;
+    clear: both; /*Cancela o float do ultimo elemento, porque eu não quero que essa caixa fique ao lado da anterior
+    
+    float: left; /*A proxima div precisa estar ao lado dessa caixa, portanto eu volto a utilizar o float, que não tem nada haver com as caixas anteriores
+    
+}
+/*
+.caixa4{
+    width: 200px;
+    height: 120px;
+    background-color: green; 
+    float: left;
+}
+
+*/
+
+
+
+
+
+
+
