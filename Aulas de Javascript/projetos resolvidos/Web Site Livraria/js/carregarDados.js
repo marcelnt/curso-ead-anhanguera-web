@@ -7,14 +7,9 @@
 ***********************************************************************/
 
 const getCarregarLivros = function(livros){
-
-     
     //Recebendo a div principal para criar os CARDS
     let div_cardProdutos = document.getElementById('cardProdutos')
 
-    //***** Cria elementos no HTML
-
-    //livros[0].books.forEach(function(item){
     livros.books.forEach(function(item){
       
         //Criar uma div (elemento novo) no projeto HTML
@@ -24,11 +19,7 @@ const getCarregarLivros = function(livros){
         let img                 = document.createElement('img')
         let div_caixa_texto     = document.createElement('div')
 
-
     //**** Cria atributos na tag no HTML
-        //Adiciona o atributo class com o valor caixa_produto na DIV
-        //setAttribute() -> adiciona um atributo na tag e coloca um valor
-        //getAttribute() -> pega o valor de um atributo na tag
         div_caixa_produto.setAttribute('class', 'caixa_produto')
         h2_caixa_titulo.setAttribute('class', 'caixa_titulo')
         figure_caixa_imagem.setAttribute('class', 'caixa_imagem')
@@ -39,7 +30,6 @@ const getCarregarLivros = function(livros){
 
 
     /**** Adiciona um elemento HTML dentro de outros elementos */
-        //Adicionando o elemento (tag nova que foi criada) dentro do elemento pai
         div_cardProdutos.appendChild(div_caixa_produto)
         div_caixa_produto.appendChild(h2_caixa_titulo)
         div_caixa_produto.appendChild(figure_caixa_imagem)
@@ -49,10 +39,7 @@ const getCarregarLivros = function(livros){
     /**** Adicionando texto aos elementos */
         h2_caixa_titulo.innerText = item.title
         div_caixa_texto.innerText = item.subtitle
-
-
     })
-
 }
 
 const getLivrosAPI = async function(){

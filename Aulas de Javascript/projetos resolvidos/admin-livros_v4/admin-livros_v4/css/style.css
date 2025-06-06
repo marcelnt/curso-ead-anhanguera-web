@@ -3,7 +3,7 @@
 }
 
 body{
-    background-image: linear-gradient(#33ae53,#0892c4);
+    background-image: linear-gradient(#ffffff, #c45308, #ecb393);
     margin: 0;
     padding: 0;
    
@@ -24,8 +24,8 @@ body{
     width: inherit;
     height: 80px;
     text-align: center;
-    background-color:#023b4c;
-    color: #ffffff;
+    background-color:#fa6604;
+    color: #000000;
     font-family: Verdana;
 }
 
@@ -79,7 +79,7 @@ form{
 }
 
 #salvar:hover{
-    background-color: #06b6de;
+    background-color: #de8006;
     color: #080808;
     cursor: pointer;
 }
@@ -105,8 +105,8 @@ form{
     margin-bottom: 10px;;
     height: 80px;
     text-align: center;
-    background-color:#023b4c;
-    color: #ffffff;
+    background-color:#fa6604;
+    color: #000000;
     font-family: Verdana;
 }
 
@@ -125,7 +125,7 @@ form{
     text-align: center;
     font-weight: bold;
     background-color: #020202;
-    color: #06b6de;
+    color: #de6e06;
     margin-right: 5px;
 }
 
@@ -140,10 +140,15 @@ form{
 
 .dados div{
     width: 50px;
-    background-color: rgb(167, 200, 189);
+    background-color: rgb(248, 218, 181);
     box-sizing: border-box;
     margin-right: 5px;
     padding: 10px;
+    font-size: 0.8em;
+
+    white-space: nowrap; /* Impede que o texto quebre para a próxima linha */
+    overflow: hidden; /* Esconde o conteúdo que transborda */
+    text-overflow: ellipsis; /* Adiciona reticências ao final do texto */
     
 }
 .dados img{
@@ -168,7 +173,7 @@ header{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2em;
     text-align: center;
-    color: #07c3f7;
+    color: #fa6604;
     font-weight: bold;
     padding-top: 20px;
 }
