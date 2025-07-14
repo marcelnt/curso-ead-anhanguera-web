@@ -1,0 +1,85 @@
+
+body{
+    background: linear-gradient(90deg,rgb(155, 93, 42) 0%, rgb(199, 137, 87) 50%, rgb(237, 201, 83) 100%)
+}
+
+#conteudo{
+    width: 400px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px #000000;
+    text-align: center;
+    background-color: #ffffff;
+
+}
+
+#titulo{
+    width: inherit;
+    height: 80px;
+    background-color: #000000;
+    color: #ffffff;
+    box-sizing: border-box;
+    padding-top: 25px;
+    font-size: 26px;
+    font-family: verdana;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+}
+
+#form{
+    width: inherit;
+    height: 185px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+input{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#resultado{
+    width: inherit;
+    height: 35px;
+    background-color: rgb(237, 178, 100);
+    box-sizing: border-box;
+    padding-top: 2px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#botaoReset{
+    width: 100px;
+    height: 30px;
+    background-color: firebrick;
+    color: #ffffff;
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+    margin-top: -30px;
+    margin-left: 20px;
+}
+
+#botaoReset a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
