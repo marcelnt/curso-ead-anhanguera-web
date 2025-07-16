@@ -53,41 +53,12 @@ function listar ()
         $arrayLivros[] = $livros;
     }
     
-    $livros = '{"livros": '.json_encode($arrayLivros).'}';
+    $livros = '{"books": '.json_encode($arrayLivros).'}';
 
     return $livros;
    
 }
 
 
-//****** Testando o INSERT  de um livro ******************
-// echo('************************ INSERINDO UM LIVRO ****************************** <br>');
-//     //Array para cadastrar um livro qualquer no banco de dados
-//     $livro = array (
-//                 "title"         => "Learn Enough JavaScript to Be Dangerous",
-//                 "subtitle"      => "Livro de PHP 8",
-//                 "isbn"          => "123456789",
-//                 "price"         => "20",
-//                 "image"         => "http://teste.jpg"
-//             );
 
-
-
-    //Função para inserir o livro e encaminhar o array de livro
-    // $status = inserir($livro);
-
-    // //Validação para saber se o livro foi cadastrado ou não
-    // if($status)
-    //     echo("O livro foi inserido com sucesso! <br><br>");
-    // else
-    //     echo("Erro ao inserir o livro! <br><br>");
-
-
-/********* Testando o SELECT de livros ********************/
-// echo('************************ LISTAGEM DE LIVROS ******************************<br>');
-// $dadosLivros = listar(); 
-
-// while ($livros=mysqli_fetch_assoc($dadosLivros)){
-//     echo('Nome do Livro: '. $livros['title'] . " - Preço: " . $livros['price'] . "<br><br>");
-// }
 ?>

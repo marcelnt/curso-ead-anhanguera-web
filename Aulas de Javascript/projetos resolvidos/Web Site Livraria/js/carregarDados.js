@@ -45,7 +45,7 @@ const getCarregarLivros = function(livros){
 const getLivrosAPI = async function(){
 
     //URL da API de livros
-    let url = 'https://projeto-livraria-latx.onrender.com/v2/livraria/livro/'
+    let url = 'http://localhost:8000/livros'
 
     //Executa o fetch na URL
     let response = await fetch(url)

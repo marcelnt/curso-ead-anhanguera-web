@@ -1,34 +1,48 @@
 <?php 
     require __DIR__ . '/vendor/autoload.php';
-    require __DIR__ . '/bd/conexaoMYSQL.php';
+    require __DIR__ . '/model/bd/conexaoMYSQL.php';
     require __DIR__ . '/model/livros.php';
     
     use Psr\Http\Message\ResponseInterface as Response;
     use Psr\Http\Message\ServerRequestInterface as Request;
     use Slim\Factory\AppFactory;
+    
 
-    //$app = new \Slim\App();
 
     $app = AppFactory::create();
 
+    header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+    header('Access-Control-Allow-Header: Content-Type');
+    header('Content-Type: application/json');
+   
+
     $app->get('/', function(Request $request, Response $response, $args){
-        $dados = '{"nome" : "sdf sdf sf"}';
+        $dados = '{"Erro" : "Acesso Negado"}';
+        
         $response->getBody()->write($dados);
 
-        return $response;
+        return $response->withHeader('Content-Type', 'application/json')->withStatus(401);
     });
 
     $app->get('/livros', function(Request $request, Response $response, $args){
-    
-        $dados = '{"nome" : "sdfsdf sdf sdf sdf sd"}';
+        $dados = listar();
 
-        $dados2 = listar();
+
+        $response->getBody()->write($dados);
+
+        return $response->withStatus(200);
+    });
+
+    $app->post('/livros', function(Request $request, Response $response, $args){
+        //Recebe o conteudo do enviado no body da mensagem
+        $dadosBodyJSON = $request->getBody()->getContents();
+        $dadosBodyJSON = json_decode($dadosBodyJSON, true);
+        $dados = inserir($dadosBodyJSON);
         
-        //json_encode($dadosUsuario);
+        $response->getBody()->write('{"message":"Item criado com sucesso"}');
+        return $response->withStatus(201);
 
-        $response->getBody()->write(json_encode($dados2));
-
-        return $response;
     });
 
      $app->run();

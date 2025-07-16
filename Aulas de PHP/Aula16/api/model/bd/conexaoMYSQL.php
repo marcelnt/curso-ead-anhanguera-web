@@ -11,8 +11,8 @@ function conexaoMysql()
     
     //Declaração de Variaveis para conexão com BD
     $server     = (string) "localhost";
-    $user       = (string) "root";
-    $password   = (string) "007mnt";
+    $user       = (string) "seu usuário";
+    $password   = (string) "sua senha";
     $database   = (string) "db_livraria_cogna";
     
     
